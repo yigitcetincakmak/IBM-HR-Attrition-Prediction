@@ -1,0 +1,92 @@
+.input-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 220px;
+}
+
+/*margin: 10px 15px 10px 15px;      margin: dış boşluk  Üst, Sağ, Alt, Sol - Saat yönüyle aynı sıradadır*/
+
+/* Label ayarları */
+label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Input ve select kutuları */
+input,select {
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color:whitesmoke;
+    font-weight: bold;
+    border-radius: 25px;  /*Köşeleri yumuşatma*/
+    border-width: 3px /*Çerçeve Kalınlığı*/  
+}
+
+/*Odaklanma (Focus) Parlama Efekti*/
+input:focus, select:focus {
+  outline: none; /* varsayılan mavi çizgiyi kaldırır */
+  border-color: #3b82f6; /* kenarlık rengini mavi yapar */
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15); /* dışarıya doğru bir mavi parlama gölgesi verme*/
+}
+
+
+select:hover{
+
+    cursor: pointer;  /*üstüne gelince el işareti oluyor mouse*/
+
+}
+
+/* Alanları yan yana diz */
+.ilk-4,.ikinci-4,.üçüncü-4,.dördüncü-4,.beşinci-4,.altıncı-4,.yedinci-4,.sekizinci-4{
+    display: flex; /*form elemanlarını yan yana dizer.*/
+    gap: 30px; /*elemanlar arasında boşluk bırakır*/
+    align-items: flex-start;
+    width:1000px;
+}
+
+/* Satırları alt alta diz */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    margin: 65px 0px 0px 30px ; /* Üstten 50px boşluk, sağ/soldan otomatik ortalar */
+}
+
+button{
+    
+    position: absolute;  /* bunu dedikten sonra alttaki konumlandırmaları yapabildik */
+    width: 200px;
+    height: 50px;
+    top: 325px;   /* Üstten  piksel boşluk */
+    left: 1100px;  /* Soldan  piksel boşluk */
+    background-color: bisque;
+    font-weight: bold;
+    border-radius: 25px;  /*Köşeleri yumuşatma*/
+    border-width: 4px; /*Çerçeve Kalınlığı*/  
+    
+}
+
+button:hover{  
+    background-color:green;
+    cursor: pointer;
+    transition: all 0.5s ease;  /* ağır şekilde gerçekleşiyor olay*/
+}
+
+.tahmin-çıktı {
+
+    position: absolute;
+    top: 250px;   /* Üstten  piksel boşluk */
+    left: 1100px;  /* Soldan  piksel boşluk */
+    width: 300px;
+    height: 200px;
+}
+
+.gizli{
+    display: none;
+}
+

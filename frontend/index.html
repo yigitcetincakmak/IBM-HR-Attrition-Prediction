@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBM HR Employee Attrition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- align = left,right,center -->
+    
+    <form id="tahmin-form">
+
+
+        <div class = "ilk-4">
+            
+            <div class = "input-form">    
+                <label class = "form-label">Yaş(18-60)</label>
+                <input id="yas" type = "number" value="18" min = "18" max="60" step = "1" required> 
+            </div>
+  
+            <div class = "input-form">
+                <label class = "form-label">İş Seyahat Sıklığı</label>
+                <select id="is_seyahati_sikligi">
+                    <option value = "Nadir Seyahat">Nadir Seyahat</option>
+                    <option value = "Seyahat Yok">Seyahat Yok</option>
+                    <option value = "Sık Seyahat">Sık Seyahat</option>
+                </select>
+            </div>
+
+             <div class = "input-form">
+                    <label class = "form-label">Günlük Ücret(102-1499)</label>
+                    <input id="gunluk_ucret" type="number" value="102" min="102" max="1499" required>
+             </div>
+
+             <div class = "input-form">
+                <label class = "form-label"> Departman</label>
+                <select id="departman">
+                    <option value="Satış">Satış</option>
+                    <option value="Ar-Ge">Ar-Ge</option>
+                    <option value="İnsan Kaynakları">İnsan Kaynakları</option>
+                </select>
+
+             </div>
+
+        </div> 
+
+
+
+        <div class="ikinci-4">
+
+            <div class="input-form">
+                <label class="form-label">Evden Uzaklik(1-29)</label>
+                <input id="evden_uzaklik" type="number" value="1" min="1" max="29" required>
+            </div>
+
+            <div class="input-form">
+                <label class="form-label">Eğitim Seviyesi(1-5)</label>
+                <input id="egitim_seviyesi" type="number" value="1" min="1" max="5" required>
+            </div>
+            
+            <div class="input-form">
+                <label class="form-label">Eğitim Alanı</label>
+                <select id="egitim_alani"> 
+                    <option value="Yaşam Bilimleri">Yaşam Bilimleri</option>
+                    <option value="Diğer">Diğer</option>
+                    <option value="Sağlık">Sağlık</option>
+                    <option value="Pazarlama">Pazarlama</option>
+                    <option value="Teknik Bölüm">Teknik Bölüm</option>
+                    <option value="İnsan Kaynakları">İnsan Kaynakları</option>
+                </select>
+            </div>
+            <div class="input-form">
+                <label class="form-label">çalışan Sayısı(yalnız 1)</label>
+                <input id="calisan_sayisi" type="number" value="1" min="1" max="1" required>
+            </div>            
+        </div>
+
+
+
+        <div class="üçüncü-4"> 
+
+                <div class="input-form">
+                    <label class="form-label">Çalışma Ortamı Memnuniyeti(1-4)</label>
+                    <input  id="calisma_ortami_memnuniyeti" type="number" value="1" min="1" max="4" required>
+                </div>
+
+                <div class="input-form">
+                    <label class="form-label">Cinsiyet</label>
+                    <select id="cinsiyet">
+                        <option value="Erkek">Erkek</option>
+                        <option value="Kadın">Kadın</option>
+                    </select>
+                </div>
+
+                <div class="input-form">
+                    <label class="form-label">Saatlik Ücret(30-100)</label>
+                    <input id="saatlik_ucret" type="number" value="30" min="30" max="100" required>
+                </div>
+
+                <div class="input-form">
+                    <label class="form-label">İşe Bağlılık(1-4)</label>
+                    <input id="ise_baglilik" type="number" value="1" min="1" max="4" required>
+                </div>
+
+        </div>
+
+
+
+        <div class="dördüncü-4">
+
+            <div class="input-form">
+                <label class="form-label">İş Seviyesi(1-5)</label>
+                <input id="is_seviyesi" type="number" value="1" min="1" max="5" required>
+            </div>
+
+            <div class="input-form">
+                <label class="form-label">İş Rolü</label>
+                <select id="is_rolu">
+                    <option value="Satış Yöneticisi">Satış Yöneticisi</option>
+                    <option value="Araştırma Uzmanı">Araştırma Uzmanı</option>
+                    <option value="Laboratuvar Teknisyeni">Laboratuvar Teknisyeni</option>
+                    <option value="Üretim Direktörü">Üretim Direktörü</option>
+                    <option value="Sağlık Temsilcisi">Sağlık Temsilcisi</option>
+                    <option value="Müdür">Müdür</option>
+                    <option value="Satış Temsilcisi">Satış Temsilcisi</option>
+                    <option value="Araştırma Direktörü">Araştırma Direktörü</option>
+                    <option value="İnsan Kaynakları">İnsan Kaynakları</option>
+                </select>
+
+            </div>
+
+            <div class="input-form">
+                <label class="form-label">İş Memnuniyeti(1-4)</label>
+                <input id="is_memnuniyeti" type="number"  value="1" min="1" max="4" required>
+            </div>
+
+            <div class="input-form">
+                <label class="form-label">Medeni Hal</label>
+                <select id="medeni_hal">
+                    <option value="Bekar">Bekar</option>
+                    <option value="Evli">Evli</option>
+                    <option value="Boşanmış">Boşanmış</option>
+                </select>
+            </div>
+        </div>
+
+
+
+        <div class = "beşinci-4">
+               
+                <div class="input-form">
+                    <label class="form-label">Aylık Gelir(1009-19999)</label>
+                    <input id="aylik_gelir" type="number" value="1009" min="1009" max="19999" required>
+                </div>
+
+                <div class = "input-form">
+                    <label class="form-label">Aylık Oran(2094-26999)</label>
+                    <input id="aylik_oran" type="number" value="2094" min="2094"  max="26999" required>
+                </div>
+
+                <div class="input-form">
+                    <label class="form-label">Çalıştığı Şirket Sayısı(0-9)</label>
+                    <input id ="calistigi_sirket_sayisi" type="number" value="0" min="0" max="9" required>
+                </div>
+                
+                <div class="input-form">
+                    <label class="form-label">Fazla Mesai</label>
+                    <select id="fazla_mesai">
+                        <option value="Yes">Evet</option>
+                        <option value="No">Hayır</option>
+                    </select>
+                </div>
+
+        </div>
+
+
+
+        <div class = "altıncı-4">
+            
+            <div class="input-form">
+                <label class="form-label">Yüzdelik Maaş Zammı(11-25)</label>
+                <input id="yuzdelik_maas_zammi" type="number"  value="11" min="11" max="25" required>
+            </div>
+
+            <div class="input-form">
+                <label class="form-label">Performans Puanı(3 yada 4)</label>
+                <input id="performans_puani" type="number" value="3" min="3" max="4" required>
+            </div>
+
+            <div class="input-form">
+                <label class="form-label">İlişki Memnuniyeti(1-4)</label>
+                <input id="iliski_memnuniyeti" type="number" value="1" min="1" max="4" required>
+            </div>
+
+            <div class="input-form">
+                <label class="form-label">Standart Çalışma Saatleri(yalnız 80)</label>
+                <input id="standart_calisma_saatleri" type="number" value="80" min="80" max="80" required>
+            </div>
+
+        </div>
+
+
+        <div class="yedinci-4">
+
+            <div class="input-form">
+                <label class="form-label">Hisse Senedi Seviyesi(0-3)</label>
+                <input id = "hisse_senedi_seviyesi" type="number" value="0" min="0" max="3" required>
+            </div>
+
+            <div class="input-form">
+                <label class="form-label">Toplam Çalisma Yılı(0-40)</label>
+                <input id = "toplam_calisma_yili" type="number" value="0" min="0" max="40" required>
+            </div>
+
+            <div class="input-form">
+                <label class="form-label">Geçen Yıl Eğitim Sayısı(0-6)</label>
+                <input id = "gecen_yil_egitim_sayisi" type="number" value="0" min="0" max="6" required>
+            </div>
+
+            <div class="input-form">
+                <label class="form-label">İş Yaşam Dengesi(1-4)</label>
+                <input id="is_yasam_dengesi" type="number" value="1" min="1" max="4" required>
+            </div>
+
+        </div>
+
+
+
+        <div class="sekizinci-4">
+            
+            <div class="input-form">
+                <label class="form-label">Şirketteki Yıl Sayısı(0-40)</label>
+                <input id="sirketteki_yil_sayisi" type="number" value="0" min="0" max="40" required>
+            </div>
+
+            <div class="input-form">
+                <label class="form-label">Mevcut Roldeki Yıl Sayısı(0-18)</label>
+                <input id="mevcut_roldeki_yil_sayisi" type="number" value="0" min="0" max="18" required>
+            </div>
+
+            <div class="input-form">
+                <label class="label-form">Son Terfiden Geçen Yıl(0-15)</label>
+                <input id="son_terfiden_gecen_yil" type="number" value="0" min="0" max="15" required>
+            </div>
+
+            <div class="input-form">
+                <label class="form-label">Mevcut Yöneticiyle Yıl Sayısı(0-17)</label>
+                <input id="mevcut_yoneticiyle_yil_sayisi" type="number" value="0" min="0" max="17" required>
+            </div>
+
+        </div>
+        
+        <button type="submit" id="submitBtn">Başlat</button>
+
+    </form>
+       
+
+    
+        <div class = "tahmin-çıktı gizli" id = "tahmin">
+            
+            <h2>Tahmin Sonucu</h2>
+
+                <div class="tahmin-oran">
+                    <p>Tahmin Oranı :</p>
+                </div>
+            
+                <div class ="tahmin">
+                    <p>Tahmin :</p>
+                </div>
+            
+                <div class="sonuç">
+                    <p>Sonuç :</p>
+                </div>
+        
+        
+        </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
