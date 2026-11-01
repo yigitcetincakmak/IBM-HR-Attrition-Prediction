@@ -80,7 +80,7 @@ button:hover{
 .tahmin-çıktı {
 
     position: absolute;
-    top: 250px;   /* Üstten  piksel boşluk */
+    top: 400px;   /* Üstten  piksel boşluk */
     left: 1100px;  /* Soldan  piksel boşluk */
     width: 300px;
     height: 200px;
@@ -90,3 +90,10 @@ button:hover{
     display: none;
 }
 
+h2{
+    color: blue;
+}
+
+span{
+    font-weight: bold;
+}

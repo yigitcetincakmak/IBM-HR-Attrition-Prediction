@@ -8,7 +8,23 @@ from pydantic import BaseModel , Field
 from typing import Literal
 
 
+
+from fastapi.middleware.cors import CORSMiddleware
+
+
+
 app = FastAPI(title="IBM HR FastAPI Uygulaması",version="1.0.0")
+
+
+# bu alttaki kısmı yazmadan önce port farklılığından dolayı api'ye bağlanamadık (CORSMiddleware import ettik)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # her porttan gelen isteğe izin ver
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 
 
 
@@ -124,7 +140,7 @@ def tahmin_fonksiyonu(veri: personel_verisi):
    
     return {
 
-        "ayrılma_tahmin_oranı": tahmin_oranı,
+        "ayrılma_tahmin_oranı": round(tahmin_oranı,2),
         "tahmin": tahmin,
         "sonuc": sonuc
     }

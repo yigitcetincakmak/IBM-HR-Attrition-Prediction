@@ -257,27 +257,36 @@
     </form>
        
 
+        <!-- Formun dışında ama "form" özelliği ile bağlı submit butonu -->
+           <!-- <input type="submit" form="kullaniciFormu" value="Gönder"> -->
     
-        <div class = "tahmin-çıktı gizli" id = "tahmin">
-            
-            <h2>Tahmin Sonucu</h2>
+        
+            <div class = "tahmin-çıktı gizli" id = "tahmin">
+                
+
+                <h2>Tahmin Sonucu :</h2>
+                <p>----------------------------------</p>
+               
 
                 <div class="tahmin-oran">
-                    <p>Tahmin Oranı :</p>
+                    <span>Ayrılma Oran Tahmini:</span>
+                    <p id="tahmin-oran">Tahmin Oranı :</p>
                 </div>
             
                 <div class ="tahmin">
-                    <p>Tahmin :</p>
+                    <span>Tahmin (0 : Kalacak , 1 : Gidecek):</span>
+                    <p id="tahmin-text">Tahmin :</p>
                 </div>
             
                 <div class="sonuç">
-                    <p>Sonuç :</p>
+                    <span>Sonuç:</span>
+                    <p id="sonuc">Sonuç :</p>
                 </div>
         
         
         </div>
 
-    <script src="script.js"></script>
+        <script src="script.js"></script>
 
 </body>
 </html>
